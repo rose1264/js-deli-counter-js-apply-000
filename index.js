@@ -2,12 +2,12 @@ var katzDeli = [1,2,3];
 var servedCustomer = 2;
 
 function takeANumber(line) {
-  line.push(`${servedCustomer + 1}`);
+  line.push(`${line.length + 1}`);
   return `Welcome, you are number ${line.length} in line.`;
 }
 
 function nowServing(line) {
-  if (!line.length) {
+  if (!line.length  || (line.length === servedCustomer + 1)) {
     return "There is nobody waiting to be served!";
   }
   servedCustomer++;
@@ -24,4 +24,4 @@ function currentLine(line) {
 //test
 //takeANumber(katzDeli);
 //nowServing(katzDeli);
-currentLine(katzDeli);
+//currentLine(katzDeli);
