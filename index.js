@@ -3,22 +3,22 @@ var servedCustomer = 2;
 
 function takeANumber(line) {
   line.push(`${servedCustomer + 1}`);
-  console.log (`Welcome, you are number ${line.length} in line.`);
+  return `Welcome, you are number ${line.length} in line.`;
 }
 
 function nowServing(line) {
   if (!line.length) {
-    console.log("There is nobody waiting to be served!");
+    return "There is nobody waiting to be served!";
   }
   servedCustomer++;
-  console.log(`Currently serving ${servedCustomer}.`);
+  return `Currently serving ${servedCustomer}.`;
 }
 
 function currentLine(line) {
   if (!line.length || (line.length === servedCustomer + 1)) {
-    console.log("The line is currently empty.");
+    return "The line is currently empty.";
   }
-  console.log(`The line is currently: ${line.length}`);
+  return `The line is currently: ${line.length}`;
 }
 
 //test
