@@ -11,7 +11,7 @@ function nowServing(line) {
     console.log("There is nobody waiting to be served!");
   }
   servedCustomer++;
-  console.log(`Currently serving ${servedCustomer + 1}.`);
+  console.log(`Currently serving ${servedCustomer}.`);
 }
 
 function currentLine(line) {
