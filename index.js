@@ -23,4 +23,4 @@ function currentLine(line) {
 
 //test
 takeANumber(katzDeli);
-nowServing(katzDeli);
+//nowServing(katzDeli);
