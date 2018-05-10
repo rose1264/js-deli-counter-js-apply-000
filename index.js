@@ -3,7 +3,7 @@ var servedCustomer = 0;
 
 function takeANumber(line) {
   line.push(`${servedCustomer + 1}`);
-  return `Welcome, you are number ${line.length} in line.`;
+  console.log(`Welcome, you are number ${line.length} in line.`) ;
 }
 
 function nowServing(line) {
