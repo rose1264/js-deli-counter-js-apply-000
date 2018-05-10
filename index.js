@@ -1,12 +1,16 @@
-function takeANumber(line, name) {
-  line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`;
+var katzDeli = [];
+var servedCustomer = 0;
+
+function takeANumber(line) {
+  line.push(${servedCustomer + 1});
+  return `Welcome, you are number ${line.length} in line.`;
 }
 
 function nowServing(line) {
   if (!line.length) {
     return "There is nobody waiting to be served!";
   }
+  servedCustomer++;
   return `Currently serving ${line.shift()}.`;
 }
 
