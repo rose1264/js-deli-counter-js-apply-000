@@ -1,4 +1,4 @@
-var katzDeli = [];
+var katzDeli = [1,2];
 var servedCustomer = 0;
 
 function takeANumber(line) {
@@ -11,17 +11,15 @@ function nowServing(line) {
     return "There is nobody waiting to be served!";
   }
   servedCustomer++;
-  return `Currently serving ${line.shift()}.`;
+  return `Currently serving ${servedCustomer + 1}.`;
 }
 
 function currentLine(line) {
-  const numbersAndNames = [];
-
-  if (!line.length) {
+  if (!line.length || (line.length === servedCustomer + 1)) {
     return "The line is currently empty.";
   }
-  for (let i = 0; i < line.length; i++) {
-    numbersAndNames.push(`${i + 1}. ${line[i]}`);
-  }
-  return `The line is currently: ${numbersAndNames.join(', ')}`;
+  return `The line is currently: ${line.length}`;
 }
+
+//test
+takeANumber(katzDeli);
