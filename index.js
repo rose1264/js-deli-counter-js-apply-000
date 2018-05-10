@@ -2,7 +2,7 @@ var katzDeli = [1,2];
 var servedCustomer = 0;
 
 function takeANumber(line) {
-  line.push(${servedCustomer + 1});
+  line.push(`${servedCustomer + 1}`);
   return `Welcome, you are number ${line.length} in line.`;
 }
 
