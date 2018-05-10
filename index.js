@@ -1,4 +1,4 @@
-var katzDeli = [1,2];
+var katzDeli = [];
 var servedCustomer = 1;
 
 function takeANumber(line) {
