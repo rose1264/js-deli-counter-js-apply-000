@@ -1,5 +1,5 @@
-var katzDeli = [];
-var servedCustomer = 0;
+var katzDeli = [1,2,3];
+var servedCustomer = 3;
 
 function takeANumber(line) {
   line.push(`${servedCustomer + 1}`);
